@@ -1,0 +1,5 @@
+import { type ReactNode } from "react";
+export function Empty({ title, children, action }: { title: string; children?: ReactNode; action?: ReactNode }) { return <div className="empty"><h3>{title}</h3>{children && <p style={{ margin: 0 }}>{children}</p>}{action}</div>; }
+export function Skeleton({ rows = 4 }: { rows?: number }) { return <div className="pb stack" aria-busy="true" aria-label="Loading">{Array.from({ length: rows }, (_, i) => <div className="skeleton" key={i} style={{ width: `${90 - i * 9}%` }} />)}</div>; }
+export function Field({ id, label, hint, children }: { id: string; label: string; hint?: string; children: ReactNode }) { return <div className="field-in"><label htmlFor={id}>{label}</label>{children}{hint && <span className="muted" style={{ fontSize: 12.5 }}>{hint}</span>}</div>; }
+export function TextInput({ id, value, onChange, ...p }: { id: string; value: string; onChange: (v: string) => void } & Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange" | "value" | "id">) { return <div className="input"><input id={id} value={value} onChange={(e) => onChange(e.target.value)} {...p} /></div>; }

@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sell · Shelfline POS</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Azeret+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="shelfline-ds.css"><style>.pos-main .offline-banner{border:1px solid #EBC892;border-radius:var(--r)}.pos-main{grid-template-rows:auto auto auto 1fr}</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-store" viewBox="0 0 24 24"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+  <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+  <path d="M2 7h20" />
+  <path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" /></symbol><symbol id="i-scan-barcode" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2" />
+  <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+  <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+  <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+  <path d="M8 7v10" />
+  <path d="M12 7v10" />
+  <path d="M17 7v10" /></symbol><symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z" />
+  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+  <path d="M12 17.5v-11" /></symbol><symbol id="i-banknote" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2" />
+  <circle cx="12" cy="12" r="2" />
+  <path d="M6 12h.01M18 12h.01" /></symbol><symbol id="i-boxes" viewBox="0 0 24 24"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" />
+  <path d="m7 16.5-4.74-2.85" />
+  <path d="m7 16.5 5-3" />
+  <path d="M7 16.5v5.17" />
+  <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" />
+  <path d="m17 16.5-5-3" />
+  <path d="m17 16.5 4.74-2.85" />
+  <path d="M17 16.5v5.17" />
+  <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" />
+  <path d="M12 8 7.26 5.15" />
+  <path d="m12 8 4.74-2.85" />
+  <path d="M12 13.5V8" /></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" />
+  <polyline points="12 6 12 12 16 14" /></symbol><symbol id="i-refresh-cw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+  <path d="M21 3v5h-5" />
+  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+  <path d="M8 16H3v5" /></symbol><symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M12 20h.01" />
+  <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+  <path d="M5 12.859a10 10 0 0 1 5.17-2.69" />
+  <path d="M19 12.859a10 10 0 0 0-2.007-1.523" />
+  <path d="M2 8.82a15 15 0 0 1 4.177-2.643" />
+  <path d="M22 8.82a15 15 0 0 0-11.288-3.764" />
+  <path d="m2 2 20 20" /></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" />
+  <path d="m21 21-4.3-4.3" /></symbol><symbol id="i-user-round" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5" />
+  <path d="M20 21a8 8 0 0 0-16 0" /></symbol><symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" /></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14" />
+  <path d="M12 5v14" /></symbol><symbol id="i-trash-2" viewBox="0 0 24 24"><path d="M3 6h18" />
+  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+  <line x1="10" x2="10" y1="11" y2="17" />
+  <line x1="14" x2="14" y1="11" y2="17" /></symbol><symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /></symbol><symbol id="i-pause" viewBox="0 0 24 24"><rect x="14" y="4" width="4" height="16" rx="1" />
+  <rect x="6" y="4" width="4" height="16" rx="1" /></symbol><symbol id="i-square-pen" viewBox="0 0 24 24"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+  <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" /></symbol><symbol id="i-credit-card" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2" />
+  <line x1="2" x2="22" y1="10" y2="10" /></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+  <path d="M7 11V7a5 5 0 0 1 10 0v4" /></symbol></svg><div class="pos"><nav class="pos-bar" aria-label="POS"><span class="mk"><svg class="icon lg" aria-hidden="true"><use href="#i-store"/></svg></span>
+<a href="#" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#i-scan-barcode"/></svg>Sell</a><a href="#"><svg class="icon" aria-hidden="true"><use href="#i-receipt"/></svg>Orders</a><a href="#"><svg class="icon" aria-hidden="true"><use href="#i-banknote"/></svg>Cash</a><a href="#"><svg class="icon" aria-hidden="true"><use href="#i-boxes"/></svg>Stock</a><a href="#"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Shift</a><span class="sp"></span><a href="#"><svg class="icon" aria-hidden="true"><use href="#i-refresh-cw"/></svg>Sync<span class="bdg">3</span></a></nav><header class="pos-head"><div class="ctx"><div><small>Location</small><b>Fitzroy</b></div><div><small>Register</small><b>FIT-2</b></div><div><small>Cashier</small><b>Priya N.</b></div><div><small>Session</small><b class="mono">since 08:57</b></div><div><small>Tue 3 Nov</small><b class="mono">11:05</b></div></div>
+<span class="sync" role="status"><svg class="icon" aria-hidden="true"><use href="#i-wifi-off"/></svg>Offline · 3 saved</span></header><section class="pos-main">
+<div class="offline-banner" role="status"><svg class="icon" aria-hidden="true"><use href="#i-wifi-off"/></svg><div><b>You can keep selling.</b> The iPad lost Wi-Fi at 11:02. Sales are saved here and send on their own when it returns. Stock shown is as of 11:02.</div></div>
+<div class="scan"><label class="input" style="flex:1"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input value="glide" aria-label="Scan barcode or search products"></label><button class="btn lg" style="min-height:56px"><svg class="icon" aria-hidden="true"><use href="#i-scan-barcode"/></svg>Scan</button></div>
+<div class="quick" aria-label="Quick add"><button><b>Merino tee</b><span>A$89.00</span></button><button><b>Crew socks 2-pack</b><span>A$34.00</span></button><button><b>Soft flask 500 ml</b><span>A$29.00</span></button><button><b>Run cap</b><span>A$39.00</span></button><button><b>Gift card</b><span>from A$25.00</span></button></div>
+<div class="results"><div class="rh"><span>4 matches for “glide” · Fitzroy stock</span><span>Men's · Black/White</span></div>
+<button class="row"><span><span class="t">Tempra Glide 3</span><br><span class="v">Men's 10 · Black/White</span></span><span class="stk"><b>7</b>in stock</span><span class="pr">A$219.95</span></button>
+<button class="row"><span><span class="t">Tempra Glide 3</span><br><span class="v">Men's 10.5 · Black/White</span></span><span class="stk"><b>6</b>in stock</span><span class="pr">A$219.95</span></button>
+<button class="row"><span><span class="t">Tempra Glide 3</span><br><span class="v">Men's 11 · Black/White</span></span><span class="stk"><b>4</b>in stock</span><span class="pr">A$219.95</span></button>
+<button class="row"><span><span class="t">Tempra Glide 3</span><br><span class="v">Men's 11.5 · Black/White</span></span><span class="stk low"><b>2</b>in stock</span><span class="pr">A$219.95</span></button>
+</div></section><aside class="cart" aria-label="Current sale"><header><h2>Current sale</h2><span class="chip">4 items</span></header>
+<div style="display:grid;grid-template-rows:auto 1fr;min-height:0"><div class="cust"><svg class="icon" aria-hidden="true"><use href="#i-user-round"/></svg><div style="flex:1;line-height:1.2"><b>Sam Okafor</b><br><span class="muted" style="font-size:13px">3 visits · A$12.50 store credit</span></div><button class="btn sm ghost">Change</button></div>
+<div class="lines">
+<div class="line"><span><span class="t">Tempra Glide 3</span><br><span class="v">Men's 10.5 · Black/White</span></span><span class="amt">219.95</span><div class="ctl"><span class="stepper" role="group" aria-label="Quantity"><button aria-label="Decrease"><svg class="icon sm" aria-hidden="true"><use href="#i-minus"/></svg></button><span class="v">1</span><button aria-label="Increase"><svg class="icon sm" aria-hidden="true"><use href="#i-plus"/></svg></button></span><button class="btn sm ghost"><svg class="icon sm" aria-hidden="true"><use href="#i-trash-2"/></svg>Remove</button></div></div>
+<div class="line"><span><span class="t">Merino tee</span><br><span class="v">Medium · Slate</span></span><span class="amt">89.00</span><div class="ctl"><span class="disc"><svg class="icon sm" aria-hidden="true"><use href="#i-tag"/></svg>10% off −8.90 · approved by Marcus T.</span><span class="stepper" role="group" aria-label="Quantity"><button aria-label="Decrease"><svg class="icon sm" aria-hidden="true"><use href="#i-minus"/></svg></button><span class="v">1</span><button aria-label="Increase"><svg class="icon sm" aria-hidden="true"><use href="#i-plus"/></svg></button></span></div></div>
+<div class="line"><span><span class="t">Crew socks 2-pack</span><br><span class="v">Large</span></span><span class="amt">68.00</span><div class="ctl"><span class="muted">34.00 each</span><span class="stepper" role="group" aria-label="Quantity"><button aria-label="Decrease"><svg class="icon sm" aria-hidden="true"><use href="#i-minus"/></svg></button><span class="v">2</span><button aria-label="Increase"><svg class="icon sm" aria-hidden="true"><use href="#i-plus"/></svg></button></span></div></div>
+</div></div>
+<div class="totals"><div class="lead"><span>Subtotal</span><i></i><b>376.95</b></div><div class="lead gain"><span>Discount</span><i></i><b>−8.90</b></div><div class="lead sub"><span>GST included</span><i></i><b>33.46</b></div>
+<div class="grand"><span>Total</span><b>A$368.05</b></div>
+<div class="acts"><button class="btn"><svg class="icon sm" aria-hidden="true"><use href="#i-pause"/></svg>Park</button><button class="btn"><svg class="icon sm" aria-hidden="true"><use href="#i-tag"/></svg>Discount</button><button class="btn"><svg class="icon sm" aria-hidden="true"><use href="#i-square-pen"/></svg>Note</button></div>
+<button class="btn primary lg" style="width:100%;min-height:60px;font-size:20px">Pay A$368.05</button>
+<div class="tender"><button class="btn"><svg class="icon sm" aria-hidden="true"><use href="#i-banknote"/></svg>Cash</button><button class="btn"><svg class="icon sm" aria-hidden="true"><use href="#i-credit-card"/></svg>Card</button><button class="btn disabled" aria-disabled="true" title="Needs network"><svg class="icon sm" aria-hidden="true"><use href="#i-lock"/></svg>Gift card</button><button class="btn disabled" aria-disabled="true" title="Needs network"><svg class="icon sm" aria-hidden="true"><use href="#i-lock"/></svg>Credit</button></div></div></aside></div></body></html>

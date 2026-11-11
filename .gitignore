@@ -1,0 +1,16 @@
+node_modules
+dist
+.env
+.env.local
+*.log
+.DS_Store
+.impeccable/review
+apps/api/.demo-devices.json
+bin/
+bridge-data/
+demo/out/
+test-results/
+playwright-report/
+.demo-devices.json
+apps/storefront/.next/
+*.tsbuildinfo

@@ -1,0 +1,21 @@
+{
+  "name": "shelfline",
+  "private": true,
+  "packageManager": "pnpm@10.18.3",
+  "scripts": {
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "build:mockups": "python3 tools/build_mockups.py",
+    "dev": "pnpm -r --parallel --filter @shelfline/api --filter @shelfline/pos --filter @shelfline/admin --filter @shelfline/portal dev",
+    "demo": "pnpm --filter @shelfline/api db:migrate && pnpm --filter @shelfline/api demo:seed",
+    "demo:reset": "pnpm --filter @shelfline/api demo:seed -- --reset",
+    "screenshots": "node tools/screenshots.mjs",
+    "test:bridge": "cd apps/bridge && go vet ./... && go test ./...",
+    "bridge:build": "cd apps/bridge && go build -o ../../bin/bridge ./cmd/bridge && go build -o ../../bin/termsim ./cmd/termsim",
+    "audit:supply": "node tools/supply-chain.mjs",
+    "backup:check": "pnpm --filter @shelfline/api backup:check",
+    "perf": "pnpm --filter @shelfline/api perf"
+  }
+}

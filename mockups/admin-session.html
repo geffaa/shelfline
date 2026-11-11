@@ -1,0 +1,109 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Registers & sessions · Shelfline</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Azeret+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="shelfline-ds.css"><style></style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4" />
+  <path d="M16 2v4" />
+  <rect width="18" height="18" x="3" y="4" rx="2" />
+  <path d="M3 10h18" /></symbol><symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <polyline points="7 10 12 15 17 10" />
+  <line x1="12" x2="12" y1="15" y2="3" /></symbol><symbol id="i-triangle-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+  <path d="M12 9v4" />
+  <path d="M12 17h.01" /></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="i-fingerprint" viewBox="0 0 24 24"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
+  <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />
+  <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" />
+  <path d="M2 12a10 10 0 0 1 18-6" />
+  <path d="M2 16h.01" />
+  <path d="M21.8 16c.2-2 .131-5.354 0-6" />
+  <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />
+  <path d="M8.65 22c.21-.66.45-1.32.57-2" />
+  <path d="M9 6.8a6 6 0 0 1 9 5.2v2" /></symbol><symbol id="i-lock-open" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+  <path d="M7 11V7a5 5 0 0 1 9.9-1" /></symbol><symbol id="i-square-dashed" viewBox="0 0 24 24"><path d="M5 3a2 2 0 0 0-2 2" />
+  <path d="M19 3a2 2 0 0 1 2 2" />
+  <path d="M21 19a2 2 0 0 1-2 2" />
+  <path d="M5 21a2 2 0 0 1-2-2" />
+  <path d="M9 3h1" />
+  <path d="M9 21h1" />
+  <path d="M14 3h1" />
+  <path d="M14 21h1" />
+  <path d="M3 9v1" />
+  <path d="M21 9v1" />
+  <path d="M3 14v1" />
+  <path d="M21 14v1" /></symbol><symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M12 20h.01" />
+  <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+  <path d="M5 12.859a10 10 0 0 1 5.17-2.69" />
+  <path d="M19 12.859a10 10 0 0 0-2.007-1.523" />
+  <path d="M2 8.82a15 15 0 0 1 4.177-2.643" />
+  <path d="M22 8.82a15 15 0 0 0-11.288-3.764" />
+  <path d="m2 2 20 20" /></symbol><symbol id="i-undo-2" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5" />
+  <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" /></symbol><symbol id="i-banknote" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2" />
+  <circle cx="12" cy="12" r="2" />
+  <path d="M6 12h.01M18 12h.01" /></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+  <path d="M7 11V7a5 5 0 0 1 10 0v4" /></symbol><symbol id="i-layout-dashboard" viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1" />
+  <rect width="7" height="5" x="14" y="3" rx="1" />
+  <rect width="7" height="9" x="14" y="12" rx="1" />
+  <rect width="7" height="5" x="3" y="16" rx="1" /></symbol><symbol id="i-shopping-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+  <path d="M3 6h18" />
+  <path d="M16 10a4 4 0 0 1-8 0" /></symbol><symbol id="i-boxes" viewBox="0 0 24 24"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" />
+  <path d="m7 16.5-4.74-2.85" />
+  <path d="m7 16.5 5-3" />
+  <path d="M7 16.5v5.17" />
+  <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" />
+  <path d="m17 16.5-5-3" />
+  <path d="m17 16.5 4.74-2.85" />
+  <path d="M17 16.5v5.17" />
+  <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" />
+  <path d="M12 8 7.26 5.15" />
+  <path d="m12 8 4.74-2.85" />
+  <path d="M12 13.5V8" /></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <circle cx="9" cy="7" r="4" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol><symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z" />
+  <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" /></symbol><symbol id="i-store" viewBox="0 0 24 24"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+  <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+  <path d="M2 7h20" />
+  <path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" /></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" />
+  <path d="m21 21-4.3-4.3" /></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></symbol><symbol id="i-settings" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+  <circle cx="12" cy="12" r="3" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <circle cx="12" cy="10" r="3" /></symbol></svg><div class="adm"><header class="top"><div class="brand"><span class="mk"><svg class="icon" aria-hidden="true"><use href="#i-store"/></svg></span>Shelfline</div>
+<nav class="domains" aria-label="Domains"><a href="#" aria-current=page><svg class="icon" aria-hidden="true"><use href="#i-layout-dashboard"/></svg><span>Today</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-shopping-bag"/></svg><span>Sell</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-boxes"/></svg><span>Stock</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg><span>People</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-banknote"/></svg><span>Money</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-megaphone"/></svg><span>Grow</span></a></nav>
+<div class="tools"><div class="input" style="min-width:220px;min-height:36px"><svg class="icon sm" aria-hidden="true"><use href="#i-search"/></svg><input placeholder="Search orders, SKUs, staff" aria-label="Search"></div>
+<button class="btn ghost" aria-label="Alerts"><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg></button><button class="btn ghost" aria-label="Admin settings"><svg class="icon" aria-hidden="true"><use href="#i-settings"/></svg></button><span class="avatar" title="Elena R., Owner">ER</span></div></header>
+<div class="body"><aside class="rail" aria-label="Locations"><h2>Locations</h2>
+<a class="loc all" href="#"><span class="dot-s"></span><span class="nm">All locations</span><span class="tz"></span><span class="st">5 locations · 5 open or receiving</span></a>
+<a class="loc" href="#" aria-current=true><span class="dot-s ok"></span><span class="nm">Fitzroy</span><span class="tz">AEDT</span><span class="st">Open · 1 register</span></a><a class="loc" href="#"><span class="dot-s ok"></span><span class="nm">South Yarra</span><span class="tz">AEDT</span><span class="st">Open · 2 registers</span><span class="badge">1 offline</span></a><a class="loc" href="#"><span class="dot-s ok"></span><span class="nm">Fremantle</span><span class="tz">AWST</span><span class="st">Open · 1 register</span></a><a class="loc" href="#"><span class="dot-s off"></span><span class="nm">Newcastle</span><span class="tz">AEDT</span><span class="st">Closed 17:31</span></a><a class="loc" href="#"><span class="dot-s ok"></span><span class="nm">Dandenong DC</span><span class="tz">AEDT</span><span class="st">Warehouse · receiving</span></a></aside>
+<main class="main"><div class="lochip"><svg class="icon sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Fitzroy<svg class="icon sm" aria-hidden="true"><use href="#i-chevron-down"/></svg></div><div class="ph"><div><h1>Registers &amp; sessions</h1><div class="sub">Fitzroy · business day closes 04:00 · all figures AUD, <span class="muted">synthetic demo data</span></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="select" aria-haspopup="dialog" aria-expanded="false" aria-label="Business day: Tue 3 Nov 2026"><span style="display:flex;gap:8px;align-items:center"><svg class="icon sm" aria-hidden="true"><use href="#i-calendar"/></svg>Tue 3 Nov 2026</span><svg class="icon sm" aria-hidden="true"><use href="#i-chevron-down"/></svg></button><button class="btn"><svg class="icon sm" aria-hidden="true"><use href="#i-download"/></svg>Export Z-report</button></div></div><nav class="subnav" aria-label="Section"><a href="#" >Overview</a><a href="#" aria-current=page>Registers & sessions</a><a href="#" >Alerts</a></nav><div class="callout" role="status"><svg class="icon" aria-hidden="true"><use href="#i-triangle-alert"/></svg><div><b>FIT-2 needs review.</b> Closed with a variance of −A$5.00 and one no-sale with no reason recorded (13:12). Three sales were made offline and synced at 11:10.</div>
+<button class="btn sm" style="margin-left:auto;align-self:center">Approve variance</button></div><section class="panel"><header><h2>Sessions · Tue 3 Nov</h2><span class="muted">3 sessions · 101 sales</span></header>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Session</th><th>Cashier</th><th>Opened – closed</th><th class="n">Sales</th><th class="n">Net sales</th><th class="n">Cash variance</th><th>Status</th></tr></thead><tbody>
+<tr><td><b>FIT-3</b></td><td>Jun L.</td><td class="mono">12:04 – open</td><td class="n">21</td><td class="n">1,318.75</td><td class="n muted">live</td><td><span class="chip info"><span class="dot-s ok"></span>Open</span></td></tr>
+<tr aria-selected="true"><td><b>FIT-2</b></td><td>Priya N.</td><td class="mono">08:57 – 17:34</td><td class="n">47</td><td class="n">4,602.00</td><td class="n neg">−5.00</td><td><span class="chip warn"><svg class="icon sm" aria-hidden="true"><use href="#i-triangle-alert"/></svg>Needs review</span></td></tr>
+<tr><td><b>FIT-1</b></td><td>Marcus T.</td><td class="mono">08:30 – 16:05</td><td class="n">33</td><td class="n">2,914.20</td><td class="n">0.00</td><td><span class="chip ok"><svg class="icon sm" aria-hidden="true"><use href="#i-check"/></svg>Approved</span></td></tr>
+</tbody></table></div></section><div class="split"><section class="panel"><header><h2>FIT-2 close sheet</h2><span class="chip">Priya N. · counted blind</span></header><div class="pb">
+<div class="lead"><span>Opening float</span><i></i><b>300.00</b></div>
+<div class="lead"><span>Cash sales <span class="muted">(31)</span></span><i></i><b>1,486.40</b></div>
+<div class="lead neg"><span>Cash refunds <span class="muted">(1)</span></span><i></i><b>−89.00</b></div>
+<div class="lead"><span>Pay-in · change top-up</span><i></i><b>50.00</b></div>
+<div class="lead neg"><span>Pay-out · courier</span><i></i><b>−32.00</b></div>
+<div class="lead neg"><span>Safe drop 13:50</span><i></i><b>−500.00</b></div>
+<div class="lead total"><span>Expected in drawer</span><i></i><b>1,215.40</b></div>
+<div class="lead"><span>Counted at close</span><i></i><b>1,210.40</b></div>
+<div class="lead neg"><span><b>Variance</b></span><i></i><b>−5.00</b></div>
+<hr class="perf">
+<div class="lead"><span>Cash</span><i></i><b>1,486.40</b></div>
+<div class="lead"><span>Card</span><i></i><b>3,204.55</b></div>
+<div class="lead"><span>Gift card</span><i></i><b>120.00</b></div>
+<div class="lead"><span>Gross sales <span class="muted">(47)</span></span><i></i><b>4,810.95</b></div>
+<div class="lead neg"><span>Refunds <span class="muted">(2)</span></span><i></i><b>−208.95</b></div>
+<div class="lead total"><span>Net sales</span><i></i><b>4,602.00</b></div>
+<div class="lead sub"><span>GST included</span><i></i><b>418.36</b></div>
+</div></section><section class="panel"><header><h2>What happened</h2><span class="muted">times are Fitzroy local</span></header><div class="pb"><ul class="tl">
+<li><span class="t">08:49</span><span class="k"><span class="ic ok"><svg class="icon" aria-hidden="true"><use href="#i-fingerprint"/></svg></span></span><span class="w"><b>Clocked in</b> · Priya N.<div class="d">Fingerprint terminal FIT-T1</div></span></li>
+<li><span class="t">08:57</span><span class="k"><span class="ic "><svg class="icon" aria-hidden="true"><use href="#i-lock-open"/></svg></span></span><span class="w"><b>Register opened</b><div class="d">Float counted A$300.00 · matches standard float</div></span></li>
+<li><span class="t">09:41</span><span class="k"><span class="ic "><svg class="icon" aria-hidden="true"><use href="#i-square-dashed"/></svg></span></span><span class="w"><b>No sale</b><div class="d">Reason: change for customer</div></span></li>
+<li><span class="t">11:02</span><span class="k"><span class="ic warn"><svg class="icon" aria-hidden="true"><use href="#i-wifi-off"/></svg></span></span><span class="w"><b>Offline 7 min</b><div class="d">3 sales saved on the iPad, synced 11:10, no conflicts</div></span></li>
+<li><span class="t">11:44</span><span class="k"><span class="ic "><svg class="icon" aria-hidden="true"><use href="#i-undo-2"/></svg></span></span><span class="w"><b>Refund FIT2-000038</b> · A$89.00 cash<div class="d">Approved by Marcus T. · item returned to Fitzroy stock</div></span></li>
+<li><span class="t">13:12</span><span class="k"><span class="ic danger"><svg class="icon" aria-hidden="true"><use href="#i-square-dashed"/></svg></span></span><span class="w"><b>No sale</b> · no reason recorded<div class="d">Drawer opened with no sale. Alert sent to Marcus T. 13:12</div></span></li>
+<li><span class="t">13:41</span><span class="k"><span class="ic "><svg class="icon" aria-hidden="true"><use href="#i-banknote"/></svg></span></span><span class="w"><b>Pay-out</b> A$32.00<div class="d">Courier · receipt photo attached</div></span></li>
+<li><span class="t">13:50</span><span class="k"><span class="ic "><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></span></span><span class="w"><b>Safe drop</b> A$500.00<div class="d">Counted with Marcus T.</div></span></li>
+<li><span class="t">17:34</span><span class="k"><span class="ic warn"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></span></span><span class="w"><b>Register closed</b><div class="d">Counted A$1,210.40 · variance −A$5.00</div></span></li>
+</ul></div></section></div></main></div>
+<nav class="mtabs" aria-label="Domains"><a href="#" aria-current=page><svg class="icon" aria-hidden="true"><use href="#i-layout-dashboard"/></svg><span>Today</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-shopping-bag"/></svg><span>Sell</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-boxes"/></svg><span>Stock</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg><span>People</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-banknote"/></svg><span>Money</span></a><a href="#" ><svg class="icon" aria-hidden="true"><use href="#i-megaphone"/></svg><span>Grow</span></a></nav></div></body></html>

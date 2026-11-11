@@ -1,0 +1,19 @@
+import { useEffect, useState } from "react";
+export interface Route { domain: string; page: string; id?: string }
+export const DOMAINS = [
+  { key: "today", label: "Today", icon: "layout-dashboard", perm: "sale:read", pages: [{ key: "overview", label: "Overview" }, { key: "sessions", label: "Registers & sessions" }, { key: "alerts", label: "Alerts" }, { key: "inbox", label: "Inbox", perm: "location:read" }] },
+  { key: "sell", label: "Sell", icon: "shopping-bag", perm: "sale:read", pages: [{ key: "orders", label: "Orders" }, { key: "online", label: "Online orders" }, { key: "channels", label: "Channels", perm: "channel:manage" }, { key: "customers", label: "Customers", perm: "customer:read" }, { key: "gift-cards", label: "Gift cards", perm: "giftcard:read" }] },
+  { key: "stock", label: "Stock", icon: "boxes", perm: "catalog:read", pages: [{ key: "products", label: "Products" }, { key: "inventory", label: "Inventory", perm: "inventory:read" }, { key: "purchase-orders", label: "Purchase orders", perm: "purchase:read" }, { key: "reorder", label: "Reorder", perm: "purchase:read" }, { key: "transfers", label: "Transfers", perm: "inventory:read" }, { key: "counts", label: "Stock counts", perm: "inventory:read" }, { key: "pricing", label: "Pricing", perm: "pricing:read" }] },
+  { key: "people", label: "People", icon: "users", perm: "user:read", pages: [{ key: "staff", label: "Staff & roles" }, { key: "schedule", label: "Schedule", perm: "roster:read" }, { key: "timesheets", label: "Timesheets", perm: "timesheet:read" }, { key: "terminals", label: "Terminals", perm: "device:manage" }] },
+  { key: "money", label: "Money", icon: "banknote", perm: "report:read", pages: [{ key: "bills", label: "Bills & payments", perm: "bill:read" }, { key: "suppliers", label: "Suppliers", perm: "purchase:read" }, { key: "commission", label: "Commission", perm: "commission:read" }, { key: "commission-rules", label: "Commission rules", perm: "commission:read" }, { key: "accounting", label: "Accounting", perm: "accounting:manage" }, { key: "reports", label: "Reports", perm: "report:read" }, { key: "report-access", label: "Report access", perm: "report:grant" }] },
+  { key: "grow", label: "Grow", icon: "megaphone", perm: "marketing:manage", pages: [{ key: "campaigns", label: "Campaigns" }, { key: "groups", label: "Groups" }, { key: "automatic", label: "Automatic emails" }, { key: "loyalty", label: "Loyalty" }] },
+  { key: "admin", label: "Admin", icon: "settings", perm: "location:read", hidden: true, pages: [{ key: "locations", label: "Locations" }, { key: "notifications", label: "Notifications", perm: "notification:manage" }, { key: "end-of-day", label: "End of day", perm: "eod:manage" }, { key: "devices", label: "Printers & cards", perm: "device:manage" }, { key: "audit", label: "Audit log", perm: "audit:read" }, { key: "sso", label: "Single sign-on", perm: "sso:manage" }] },
+] as const;
+export const parse = (hash: string): Route => { const [, domain, page, id] = hash.replace(/^#/, "").split("/"); return { domain: domain || "today", page: page || (DOMAINS.find((d) => d.key === (domain || "today"))?.pages[0]?.key ?? "overview"), id }; };
+export const href = (domain: string, page: string, id?: string) => `#/${domain}/${page}${id ? `/${id}` : ""}`;
+export const navigate = (domain: string, page: string, id?: string, query?: Record<string, string>) => { const q = query ? `?${new URLSearchParams(query)}` : ""; window.location.hash = href(domain, page, id) + q; };
+export function useRoute(): Route & { query: URLSearchParams } {
+  const [h, setH] = useState(window.location.hash);
+  useEffect(() => { const f = () => setH(window.location.hash); window.addEventListener("hashchange", f); return () => window.removeEventListener("hashchange", f); }, []);
+  const [path, query = ""] = h.split("?"); return { ...parse(path!), query: new URLSearchParams(query) };
+}

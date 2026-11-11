@@ -1,0 +1,16 @@
+# Host port 54340 avoids clashes with other local projects (54329/54330/54322/55432/5440 are in use here).
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: shelfline
+      POSTGRES_PASSWORD: shelfline
+      POSTGRES_DB: shelfline
+    ports: ["54340:5432"]
+    volumes: ["shelfline-pg:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U shelfline"]
+      interval: 3s
+      retries: 20
+volumes:
+  shelfline-pg:
